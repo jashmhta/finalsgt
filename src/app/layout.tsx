@@ -206,6 +206,7 @@ const GLOBAL_SCHEMA = [
       { "@type": "ListItem", position: 7, name: "Gallery", item: `${BASE_URL}/gallery` },
       { "@type": "ListItem", position: 8, name: "About Us", item: `${BASE_URL}/about` },
       { "@type": "ListItem", position: 9, name: "Contact", item: `${BASE_URL}/contact` },
+      { "@type": "ListItem", position: 10, name: "Travel Blog", item: `${BASE_URL}/blog` },
     ],
   },
   // 4. FAQPage schema (boosts rich snippets)

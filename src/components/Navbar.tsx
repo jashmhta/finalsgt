@@ -8,7 +8,7 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, Home, Globe, MapPin, Image, Info, Mail, Phone } from "lucide-react";
+import { Menu, X, Home, Globe, MapPin, Image, Info, Mail, Phone, BookOpen } from "lucide-react";
 
 const LOGO_URL = "https://cdn.jsdelivr.net/gh/jashmhta/sgt-assets@main/sgt-logo-transparent.png";
 
@@ -17,6 +17,7 @@ const NAV_ITEMS = [
   { label: "Domestic", href: "/domestic", icon: MapPin },
   { label: "International", href: "/international", icon: Globe },
   { label: "Gallery", href: "/gallery", icon: Image },
+  { label: "Blog", href: "/blog", icon: BookOpen },
   { label: "About", href: "/about", icon: Info },
   { label: "Contact", href: "/contact", icon: Mail },
 ];

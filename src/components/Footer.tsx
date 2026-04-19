@@ -160,6 +160,7 @@ export default function Footer() {
                 { label: "Group Tours", href: "/group-tours" },
                 { label: "Customized Tours", href: "/customized" },
                 { label: "Gallery", href: "/gallery" },
+                { label: "Travel Blog", href: "/blog" },
                 { label: "About Us", href: "/about" },
                 { label: "Contact Us", href: "/contact" },
               ].map((link) => (
