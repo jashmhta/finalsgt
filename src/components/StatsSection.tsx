@@ -6,14 +6,16 @@
 import { useAnimatedCounter } from "@/hooks/useScrollReveal";
 import { CompassSvg, PlaneSvg } from "./SvgDecorations";
 
+const TOUR_GLOBE_ICON = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663219430874/zIAlonVMaYDmGkYA.png";
+
 const STATS = [
-  { value: 37, suffix: "+", label: "Years of Trust", sub: "Est. 1987, Mumbai", icon: "🏆" },
-  { value: 37, suffix: "+", label: "Tour Packages", sub: "India & worldwide", icon: "📦" },
-  { value: 50, suffix: "K+", label: "Happy Travellers", sub: "Families served", icon: "👨‍👩‍👧" },
-  { value: 30, suffix: "+", label: "Countries Covered", sub: "Asia, Europe & more", icon: "🌍" },
+  { value: 37, suffix: "+", label: "Years of Trust", sub: "Est. 1987, Mumbai", icon: "🏆", image: null },
+  { value: 37, suffix: "+", label: "Tour Packages", sub: "India & worldwide", icon: null, image: TOUR_GLOBE_ICON },
+  { value: 50, suffix: "K+", label: "Happy Travellers", sub: "Families served", icon: "👨‍👩‍👧", image: null },
+  { value: 30, suffix: "+", label: "Countries Covered", sub: "Asia, Europe & more", icon: "🌍", image: null },
 ];
 
-function StatCard({ stat, index }: { stat: typeof STATS[0]; index: number }) {
+function StatCard({ stat, index }: { stat: (typeof STATS)[0]; index: number }) {
   const { ref, count } = useAnimatedCounter(stat.value, 2200);
 
   return (
@@ -30,7 +32,13 @@ function StatCard({ stat, index }: { stat: typeof STATS[0]; index: number }) {
         animationDelay: `${index * 0.15}s`,
       }}
     >
-      <div style={{ fontSize: "2.2rem", marginBottom: "0.6rem" }}>{stat.icon}</div>
+      <div style={{ fontSize: "2.2rem", marginBottom: "0.6rem", display: "flex", justifyContent: "center", alignItems: "center", minHeight: "3rem" }}>
+        {stat.image ? (
+          <img src={stat.image} alt={stat.label} style={{ width: 56, height: 56, objectFit: "contain" }} />
+        ) : (
+          stat.icon
+        )}
+      </div>
       <div
         style={{
           fontFamily: "var(--font-heading)",
