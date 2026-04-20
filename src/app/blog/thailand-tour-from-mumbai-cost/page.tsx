@@ -3,7 +3,7 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Thailand Tour from Mumbai — Cost & Itinerary 2026",
+  title: "Thailand Tour from Mumbai — Cost",
   description: "Complete Thailand tour guide from Mumbai. Bangkok, Pattaya, Phuket, Krabi. Visa on arrival, costs, and 6-day itinerary.",
   keywords: ["Thailand tour from Mumbai", "Thailand package cost", "Bangkok tour from Mumbai"],
   alternates: { canonical: "https://www.shriganeshtravel.com/blog/thailand-tour-from-mumbai-cost" },

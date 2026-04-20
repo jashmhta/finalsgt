@@ -3,7 +3,7 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Kerala Tour Packages from Mumbai — Best Deals",
+  title: "Kerala Tour Packages from Mumbai",
   description: "All-inclusive Kerala tour packages from Mumbai. Munnar, Alleppey, Thekkady, Kovalam. Group & family tours from ₹14,999.",
   keywords: ["Kerala tour package from Mumbai", "Kerala trip from Mumbai", "Munnar tour package", "Alleppey houseboat package"],
   alternates: { canonical: "https://www.shriganeshtravel.com/blog/kerala-tour-packages-mumbai" },

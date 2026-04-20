@@ -3,7 +3,7 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Maldives Tour Package from Mumbai — Island Paradise",
+  title: "Maldives Tour Package from Mumbai",
   description: "Affordable Maldives packages from Mumbai. Water villas, snorkeling, sunset cruises. Direct flights. From ₹49,999 per person.",
   keywords: ["Maldives tour from Mumbai", "Maldives package cost", "Maldives honeymoon package"],
   alternates: { canonical: "https://www.shriganeshtravel.com/blog/maldives-tour-package-from-mumbai" },

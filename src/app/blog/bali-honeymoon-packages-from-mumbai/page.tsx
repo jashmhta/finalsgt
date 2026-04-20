@@ -3,7 +3,7 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Bali Honeymoon Packages from Mumbai — Romance Guide",
+  title: "Bali Honeymoon Packages Mumbai",
   description: "Dream Bali honeymoon from Mumbai. Ubud, Seminyak, Tanah Lot, private villas. Romantic packages from ₹39,999 per couple.",
   keywords: ["Bali honeymoon from Mumbai", "Bali tour package cost", "Bali trip from Mumbai"],
   alternates: { canonical: "https://www.shriganeshtravel.com/blog/bali-honeymoon-packages-from-mumbai" },

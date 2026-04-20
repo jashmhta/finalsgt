@@ -3,7 +3,7 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Singapore Family Tour from Mumbai — 5 Day Guide",
+  title: "Singapore Family Tour from Mumbai",
   description: "Plan a Singapore family vacation from Mumbai. Sentosa, Universal Studios, Gardens by the Bay. All-inclusive packages from ₹44,999.",
   keywords: ["Singapore tour from Mumbai", "Singapore family package", "Singapore trip cost from Mumbai"],
   alternates: { canonical: "https://www.shriganeshtravel.com/blog/singapore-family-tour-from-mumbai" },

@@ -3,7 +3,7 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Switzerland Tour from Mumbai — Alps & Lakes Guide",
+  title: "Switzerland Tour from Mumbai",
   description: "Switzerland tour packages from Mumbai. Zurich, Lucerne, Interlaken, Jungfraujoch. Swiss rail pass included. From ₹89,999.",
   keywords: ["Switzerland tour from Mumbai", "Switzerland package cost", "Europe tour from Mumbai"],
   alternates: { canonical: "https://www.shriganeshtravel.com/blog/switzerland-tour-from-mumbai" },

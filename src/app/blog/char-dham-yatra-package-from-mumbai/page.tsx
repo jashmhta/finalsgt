@@ -3,7 +3,7 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Char Dham Yatra Package from Mumbai — Pilgrimage",
+  title: "Char Dham Yatra Package Mumbai",
   description: "Sacred Char Dham yatra from Mumbai. Badrinath, Kedarnath, Gangotri, Yamunotri. Helicopter & road options from ₹24,999.",
   keywords: ["Char Dham yatra from Mumbai", "Kedarnath tour package", "Badrinath yatra package"],
   alternates: { canonical: "https://www.shriganeshtravel.com/blog/char-dham-yatra-package-from-mumbai" },

@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const name = slug.split("-").map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
   const url = `https://www.shriganeshtravel.com/destination/${slug}`;
-  const title = `${name} Tour Package | Shri Ganesh Travels`;
+  const title = `${name} Tour Package`;
   const description = `Explore ${name} with Shri Ganesh Travels. All-inclusive group & family tour packages from Mumbai. Meals, hotels, sightseeing, and transfers included.`;
   return {
     title,

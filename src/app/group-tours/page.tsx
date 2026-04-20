@@ -5,7 +5,7 @@ import PageClient from "./PageContent";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Group Tours — Monthly Departures from Mumbai",
+  title: "Group Tours from Mumbai",
   description: "Join monthly group tour departures from Mumbai. All-inclusive packages for families & seniors. India & international destinations covered.",
   alternates: { canonical: "https://www.shriganeshtravel.com/group-tours" },
   openGraph: {

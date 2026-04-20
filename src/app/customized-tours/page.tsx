@@ -5,7 +5,7 @@ import PageClient from "./PageContent";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Customized Tours — Private Tailor-Made Packages",
+  title: "Customized Tour Packages",
   description: "Design your perfect tour with Shri Ganesh Travels. Private family trips, honeymoons & corporate tours. Your dates, budget, preferences.",
   alternates: { canonical: "https://www.shriganeshtravel.com/customized-tours" },
   openGraph: {

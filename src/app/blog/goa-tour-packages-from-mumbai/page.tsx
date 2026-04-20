@@ -3,7 +3,7 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Goa Tour Packages from Mumbai — Beach Getaway",
+  title: "Goa Tour Packages from Mumbai",
   description: "Weekend Goa packages from Mumbai. North Goa beaches, Old Goa, water sports, Dudhsagar Falls. From ₹6,999 per person.",
   keywords: ["Goa tour from Mumbai", "Goa package cost", "Goa weekend trip from Mumbai"],
   alternates: { canonical: "https://www.shriganeshtravel.com/blog/goa-tour-packages-from-mumbai" },

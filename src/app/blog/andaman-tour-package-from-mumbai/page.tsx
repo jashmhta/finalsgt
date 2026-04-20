@@ -3,7 +3,7 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Andaman Tour Package from Mumbai — Island Adventure",
+  title: "Andaman Tour Package from Mumbai",
   description: "Andaman & Nicobar tour from Mumbai. Havelock Island, Radhanagar Beach, scuba diving, cellular jail. From ₹29,999.",
   keywords: ["Andaman tour from Mumbai", "Andaman package cost", "Havelock Island tour"],
   alternates: { canonical: "https://www.shriganeshtravel.com/blog/andaman-tour-package-from-mumbai" },

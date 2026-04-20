@@ -3,7 +3,7 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Best Tour Packages from Mumbai 2026 — Top Picks",
+  title: "Best Tour Packages from Mumbai 2026",
   description: "Top-rated tour packages from Mumbai. Group & family tours to India and 30+ countries. All-inclusive with meals, hotels, transport.",
   keywords: ["tour packages from Mumbai", "best tours Mumbai", "group tour packages Mumbai", "family holiday packages Mumbai"],
   alternates: { canonical: "https://www.shriganeshtravel.com/blog/best-tour-packages-from-mumbai" },

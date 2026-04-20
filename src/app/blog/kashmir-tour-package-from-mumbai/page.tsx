@@ -3,7 +3,7 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Kashmir Tour Package from Mumbai — Paradise Guide",
+  title: "Kashmir Tour Package from Mumbai",
   description: "All-inclusive Kashmir tour from Mumbai. Srinagar, Gulmarg, Pahalgam, Sonmarg. Group & family packages from ₹18,999.",
   keywords: ["Kashmir tour from Mumbai", "Kashmir package cost", "Srinagar tour package"],
   alternates: { canonical: "https://www.shriganeshtravel.com/blog/kashmir-tour-package-from-mumbai" },

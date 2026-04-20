@@ -3,7 +3,7 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "10 Best Honeymoon Destinations from Mumbai 2026",
+  title: "Best Honeymoon Spots from Mumbai",
   description: "Top honeymoon spots from Mumbai: Maldives, Bali, Switzerland, Kashmir, Kerala, Goa, Andaman, Mauritius, Sri Lanka, Thailand.",
   keywords: ["honeymoon destinations from Mumbai", "best honeymoon packages", "romantic getaway from Mumbai"],
   alternates: { canonical: "https://www.shriganeshtravel.com/blog/best-honeymoon-destinations-from-mumbai" },

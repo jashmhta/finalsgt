@@ -3,7 +3,7 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Senior Citizen Group Tours from Mumbai — Safe Travel",
+  title: "Senior Citizen Tours from Mumbai",
   description: "Comfortable group tours for seniors from Mumbai. Easy pace, quality hotels, medical support. Domestic & international options.",
   keywords: ["senior citizen tours Mumbai", "group tours for elderly", "senior travel packages India"],
   alternates: { canonical: "https://www.shriganeshtravel.com/blog/group-tours-for-senior-citizens-mumbai" },

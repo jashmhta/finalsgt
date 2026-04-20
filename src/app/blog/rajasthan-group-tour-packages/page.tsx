@@ -3,7 +3,7 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Rajasthan Group Tour Packages from Mumbai",
+  title: "Rajasthan Group Tour Packages",
   description: "Monthly Rajasthan group tours from Mumbai. Jaipur, Udaipur, Jodhpur, Jaisalmer. All-inclusive from ₹12,999 per person.",
   keywords: ["Rajasthan tour package", "Rajasthan group tour from Mumbai", "Jaipur tour package"],
   alternates: { canonical: "https://www.shriganeshtravel.com/blog/rajasthan-group-tour-packages" },

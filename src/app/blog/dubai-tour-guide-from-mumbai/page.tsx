@@ -3,7 +3,7 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Dubai Tour Guide from Mumbai — Itinerary & Cost",
+  title: "Dubai Tour Guide from Mumbai 2026",
   description: "Complete Dubai tour guide from Mumbai. 5-day itinerary, visa process, costs, attractions, and booking tips. Starting ₹34,999.",
   keywords: ["Dubai tour from Mumbai", "Dubai tour package cost", "Dubai visa from Mumbai", "Dubai trip from Mumbai"],
   alternates: { canonical: "https://www.shriganeshtravel.com/blog/dubai-tour-guide-from-mumbai" },
