@@ -3,16 +3,21 @@
  * PageLoader — Custom logo loader animation
  * Design: Light/Day theme — white background, navy + amber accents
  * Shows ONLY on the very first page load of the session (not on route changes)
+ * WAITS for the first hero image to be loaded before dismissing
  */
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
 const LOGO_URL = "https://cdn.jsdelivr.net/gh/jashmhta/sgt-assets@main/sgt-logo-new_9d44f3f0.png";
+const FIRST_HERO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663219430874/2h54D4sXofpUDadmXQJQic/hero-1-taj-mahal-27YjyXGmXwYjrqgd3BNk5N.png";
 const SESSION_KEY = "sgt_loader_shown";
+const MIN_DISPLAY_MS = 1800; // minimum time to show loader for branding
+const MAX_DISPLAY_MS = 6000; // maximum time even if image hasn't loaded
 
 export default function PageLoader() {
   // Check if loader was already shown this session
   const [visible, setVisible] = useState(() => {
+    if (typeof window === "undefined") return false;
     try {
       return !sessionStorage.getItem(SESSION_KEY);
     } catch {
@@ -20,6 +25,11 @@ export default function PageLoader() {
     }
   });
   const [fadeOut, setFadeOut] = useState(false);
+
+  const dismiss = useCallback(() => {
+    setFadeOut(true);
+    setTimeout(() => setVisible(false), 800);
+  }, []);
 
   useEffect(() => {
     if (!visible) return;
@@ -31,15 +41,46 @@ export default function PageLoader() {
       // ignore
     }
 
-    // Start fade-out after 2.0s
-    const fadeTimer = setTimeout(() => setFadeOut(true), 2000);
-    // Remove from DOM after fade completes
-    const removeTimer = setTimeout(() => setVisible(false), 2800);
-    return () => {
-      clearTimeout(fadeTimer);
-      clearTimeout(removeTimer);
+    let dismissed = false;
+    const startTime = Date.now();
+
+    // Preload the first hero image
+    const img = new Image();
+    img.src = FIRST_HERO_URL;
+
+    const tryDismiss = () => {
+      if (dismissed) return;
+      const elapsed = Date.now() - startTime;
+      if (elapsed >= MIN_DISPLAY_MS) {
+        dismissed = true;
+        dismiss();
+      } else {
+        // Wait until minimum display time
+        setTimeout(() => {
+          if (!dismissed) {
+            dismissed = true;
+            dismiss();
+          }
+        }, MIN_DISPLAY_MS - elapsed);
+      }
     };
-  }, [visible]);
+
+    // When image loads, dismiss (after min time)
+    img.onload = tryDismiss;
+    img.onerror = tryDismiss;
+
+    // Safety timeout — dismiss even if image never loads
+    const maxTimer = setTimeout(() => {
+      if (!dismissed) {
+        dismissed = true;
+        dismiss();
+      }
+    }, MAX_DISPLAY_MS);
+
+    return () => {
+      clearTimeout(maxTimer);
+    };
+  }, [visible, dismiss]);
 
   if (!visible) return null;
 
@@ -148,6 +189,9 @@ export default function PageLoader() {
               ))}
             </motion.div>
           </motion.div>
+
+          {/* Hidden preload of hero image */}
+          <img src={FIRST_HERO_URL} alt="" style={{ display: "none" }} />
         </motion.div>
       )}
     </AnimatePresence>

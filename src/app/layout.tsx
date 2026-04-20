@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import PageLoader from "@/components/PageLoader";
 
 const BASE_URL = "https://www.shriganeshtravel.com";
 const OG_IMAGE = "https://cdn.jsdelivr.net/gh/jashmhta/sgt-assets@main/og-preview.png";
@@ -325,6 +326,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 
+        {/* Preload first hero image for instant display after loader */}
+        <link
+          rel="preload"
+          href="https://d2xsxph8kpxj0f.cloudfront.net/310519663219430874/2h54D4sXofpUDadmXQJQic/hero-1-taj-mahal-27YjyXGmXwYjrqgd3BNk5N.png"
+          as="image"
+          type="image/png"
+        />
         {/* Preload critical font */}
         <link
           rel="preload"
@@ -344,7 +352,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         ))}
       </head>
-      <body>{children}</body>
+      <body>
+          <PageLoader />
+          {children}
+        </body>
     </html>
   );
 }
